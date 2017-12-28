@@ -1,0 +1,112 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="com.example.android.helloandroid.MainActivity"
+tools:showIn="@layout/activity_main"
+android:background="@color/colorPrimary">
+
+<ImageView
+    android:src="@drawable/udacity_smaller"
+    android:id="@+id/udacity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="centerCrop"
+    android:layout_alignParentTop="true"
+    />
+
+<ImageView
+    android:src="@drawable/logo2"
+    android:id="@+id/logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_above="@id/zip"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingRight="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_small"
+    android:background="@color/colorPrimary"
+    />
+
+<TextView
+    android:id="@+id/zip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/zip"
+    android:layout_above="@id/address1"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_small"
+    android:paddingTop="@dimen/margin_small"
+    android:textSize="@dimen/text_large"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorStanBlue"
+    />
+
+<TextView
+    android:id="@+id/address1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/address1"
+    android:layout_above="@id/address2"
+    android:paddingLeft="@dimen/margin_medium"
+    android:textSize="@dimen/text_medium"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorStanBlue"
+    />
+
+<TextView
+    android:id="@+id/address2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/address2"
+    android:layout_above="@id/address3"
+    android:paddingLeft="@dimen/margin_medium"
+    android:textSize="@dimen/text_medium"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorStanBlue"
+    />
+
+<TextView
+    android:id="@+id/address3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/address3"
+    android:layout_above="@id/hear"
+    android:paddingLeft="@dimen/margin_medium"
+    android:textSize="@dimen/text_medium"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorStanBlue"
+    />
+
+<TextView
+    android:id="@+id/hear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hear"
+    android:layout_alignParentBottom="true"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_large"
+    android:layout_alignParentRight="true"
+    android:textSize="@dimen/text_medium"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorGrey"
+    android:textStyle="italic"
+    />
+
+<ImageButton
+    android:src="@drawable/review"
+    android:id="@+id/review"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:paddingBottom="@dimen/margin_small"
+    android:scaleType="centerCrop"
+    android:onClick="studentVideo"
+    android:background="@color/colorLightBlue"
+    />
+
+</RelativeLayout>

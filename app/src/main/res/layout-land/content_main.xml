@@ -1,0 +1,103 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="com.example.android.helloandroid.MainActivity"
+tools:showIn="@layout/activity_main"
+android:background="@color/colorLightBlue">
+
+    <ImageView
+        android:src="@drawable/logobig_land"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"/>
+
+<TextView
+    android:id="@+id/zip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/zip"
+    android:layout_above="@id/address1"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_small"
+    android:paddingTop="@dimen/margin_small"
+    android:textSize="@dimen/text_large"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorStanBlue"
+    />
+
+<TextView
+    android:id="@+id/address1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/address1"
+    android:layout_above="@id/address2"
+    android:paddingLeft="@dimen/margin_medium"
+    android:textSize="@dimen/text_medium"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorStanBlue"
+    />
+
+<TextView
+    android:id="@+id/address2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/address2"
+    android:layout_above="@id/address3"
+    android:paddingLeft="@dimen/margin_medium"
+    android:textSize="@dimen/text_medium"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorStanBlue"
+    />
+
+<TextView
+    android:id="@+id/address3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/address3"
+    android:layout_above="@id/hear"
+    android:paddingLeft="@dimen/margin_medium"
+    android:textSize="@dimen/text_medium"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorStanBlue"
+    />
+
+<TextView
+    android:id="@+id/hear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/hear"
+    android:layout_alignParentBottom="true"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_medium"
+    android:layout_alignParentRight="true"
+    android:textSize="@dimen/text_medium"
+    android:background="@color/colorLightBlue"
+    android:textColor="@color/colorGrey"
+    android:textStyle="italic"
+    />
+
+<ImageButton
+    android:src="@drawable/review_land"
+    android:id="@+id/review"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerHorizontal="false"
+    android:layout_below="@id/logo"
+    android:paddingRight="@dimen/margin_small"
+    android:scaleType="centerCrop"
+    android:onClick="studentVideo"
+    android:background="@color/colorLightBlue"
+    />
+
+</RelativeLayout>
