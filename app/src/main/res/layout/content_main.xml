@@ -4,109 +4,111 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
 app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:context="com.example.android.helloandroid.MainActivity"
-tools:showIn="@layout/activity_main"
-android:background="@color/colorPrimary">
+    tools:showIn="@layout/activity_main">
 
 <ImageView
-    android:src="@drawable/udacity_smaller"
     android:id="@+id/udacity"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:scaleType="centerCrop"
     android:layout_alignParentTop="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/udacity_smaller"
     />
 
 <ImageView
-    android:src="@drawable/logo2"
     android:id="@+id/logo"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
     android:layout_above="@id/zip"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/margin_small"
     android:paddingLeft="@dimen/margin_medium"
     android:paddingRight="@dimen/margin_medium"
-    android:paddingBottom="@dimen/margin_small"
-    android:background="@color/colorPrimary"
+    android:src="@drawable/logo2"
     />
 
 <TextView
     android:id="@+id/zip"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/zip"
     android:layout_above="@id/address1"
-    android:paddingLeft="@dimen/margin_medium"
-    android:paddingBottom="@dimen/margin_small"
-    android:paddingTop="@dimen/margin_small"
-    android:textSize="@dimen/text_large"
     android:background="@color/colorLightBlue"
+    android:drawableLeft="@drawable/phone_icon_s"
+    android:drawablePadding="@dimen/margin_small"
+    android:paddingBottom="@dimen/margin_small"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_small"
+    android:text="@string/zip"
     android:textColor="@color/colorStanBlue"
+    android:textSize="@dimen/text_large"
     />
 
 <TextView
     android:id="@+id/address1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/address1"
     android:layout_above="@id/address2"
-    android:paddingLeft="@dimen/margin_medium"
-    android:textSize="@dimen/text_medium"
     android:background="@color/colorLightBlue"
+    android:paddingLeft="@dimen/margin_medium"
+    android:text="@string/address1"
     android:textColor="@color/colorStanBlue"
+    android:textSize="@dimen/text_medium"
     />
 
 <TextView
     android:id="@+id/address2"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/address2"
     android:layout_above="@id/address3"
-    android:paddingLeft="@dimen/margin_medium"
-    android:textSize="@dimen/text_medium"
     android:background="@color/colorLightBlue"
+    android:paddingLeft="@dimen/margin_medium"
+    android:text="@string/address2"
     android:textColor="@color/colorStanBlue"
+    android:textSize="@dimen/text_medium"
     />
 
 <TextView
     android:id="@+id/address3"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/address3"
     android:layout_above="@id/hear"
-    android:paddingLeft="@dimen/margin_medium"
-    android:textSize="@dimen/text_medium"
     android:background="@color/colorLightBlue"
+    android:paddingLeft="@dimen/margin_medium"
+    android:text="@string/address3"
     android:textColor="@color/colorStanBlue"
+    android:textSize="@dimen/text_medium"
     />
 
 <TextView
     android:id="@+id/hear"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/hear"
     android:layout_alignParentBottom="true"
-    android:paddingLeft="@dimen/margin_medium"
-    android:paddingBottom="@dimen/margin_large"
     android:layout_alignParentRight="true"
-    android:textSize="@dimen/text_medium"
     android:background="@color/colorLightBlue"
+    android:paddingBottom="@dimen/margin_large"
+    android:paddingLeft="@dimen/margin_medium"
+    android:text="@string/hear"
     android:textColor="@color/colorGrey"
+    android:textSize="@dimen/text_medium"
     android:textStyle="italic"
     />
 
 <ImageButton
-    android:src="@drawable/review"
     android:id="@+id/review"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_centerHorizontal="true"
+    android:background="@color/colorLightBlue"
+    android:onClick="studentVideo"
     android:paddingBottom="@dimen/margin_small"
     android:scaleType="centerCrop"
-    android:onClick="studentVideo"
-    android:background="@color/colorLightBlue"
+    android:src="@drawable/review"
     />
 
 </RelativeLayout>

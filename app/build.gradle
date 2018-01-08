@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+ext.emailAddress = "zsu.karap@gmail.com"
+ext.projectID = "1234"
 
 android {
     compileSdkVersion 26

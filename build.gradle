@@ -5,8 +5,10 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {url 'https://jitpack.io'}
     }
     dependencies {
+        classpath 'com.github.udacity:android-assistant-gradle-plugin:-SNAPSHOT'
         classpath 'com.android.tools.build:gradle:3.0.0'
         
 
